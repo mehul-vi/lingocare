@@ -97,9 +97,9 @@ function Topic({
 
       {/* Topic Header */}
 
-      <div className="px-4 py-3">
+      <div className="px-3 py-3 sm:px-4">
 
-        <div className="flex items-start gap-3">
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-start">
 
           {/* Expand / Collapse */}
 
@@ -207,7 +207,7 @@ function Topic({
                 topic.id
               )
             }
-            className="shrink-0 rounded-md px-2 py-1 text-xs font-medium text-gray-400 transition hover:bg-red-50 hover:text-red-500"
+            className="shrink-0 self-start rounded-md px-2 py-1 text-xs font-medium text-gray-400 transition hover:bg-red-50 hover:text-red-500"
           >
             Delete
           </button>
@@ -218,7 +218,7 @@ function Topic({
       {/* Topic Content */}
 
       {isOpen && (
-        <div className="border-t border-gray-200 px-4 py-3 pl-12">
+        <div className="border-t border-gray-200 px-3 py-3 pl-8 sm:px-4 sm:pl-12">
 
           {/* Lessons */}
 

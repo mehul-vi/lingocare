@@ -718,7 +718,7 @@ function CurriculumPage() {
         isGenerating={isGenerating}
       />
 
-      <main className="mx-auto max-w-4xl px-5 py-8 sm:px-6">
+      <main className="mx-auto max-w-4xl px-4 py-6 sm:px-6 sm:py-8 lg:px-8">
 
         {/* AI Loading / Progress */}
 
@@ -846,7 +846,7 @@ function CurriculumPage() {
 
             <section className="mb-8 border-b border-gray-200 pb-7">
 
-              <div className="flex items-start justify-between gap-6">
+              <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between sm:gap-6">
 
                 <div className="min-w-0 flex-1">
 
@@ -866,14 +866,14 @@ function CurriculumPage() {
                       )
                     }
                     placeholder="Untitled Curriculum"
-                    className="mt-2 block w-full bg-transparent text-[28px] font-semibold leading-tight tracking-tight text-gray-900 outline-none placeholder:text-gray-300"
+                    className="mt-2 block w-full bg-transparent text-2xl font-semibold leading-tight tracking-tight text-gray-900 outline-none placeholder:text-gray-300 sm:text-[28px]"
                   />
 
                 </div>
 
                 {/* Module Count */}
 
-                <span className="mt-1 shrink-0 rounded-full bg-gray-100 px-3 py-1 text-xs text-gray-500">
+                <span className="shrink-0 self-start rounded-full bg-gray-100 px-3 py-1 text-xs text-gray-500">
                   {curriculum.modules.length}{" "}
                   {curriculum.modules.length ===
                   1
@@ -918,7 +918,7 @@ function CurriculumPage() {
               <button
                 onClick={addModule}
                 disabled={isGenerating}
-                className="mt-4 rounded-md bg-[#EC8601] px-4 py-2 text-sm font-medium text-white shadow-sm transition hover:bg-[#d97700] disabled:cursor-not-allowed disabled:opacity-50"
+                className="mt-4 w-full rounded-md bg-[#EC8601] px-4 py-2 text-sm font-medium text-white shadow-sm transition hover:bg-[#d97700] disabled:cursor-not-allowed disabled:opacity-50 sm:w-auto"
               >
                 + Add Module
               </button>
@@ -929,7 +929,7 @@ function CurriculumPage() {
 
             <section>
 
-              <div className="mb-5 flex items-end justify-between">
+              <div className="mb-5 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
 
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-[0.15em] text-gray-400">

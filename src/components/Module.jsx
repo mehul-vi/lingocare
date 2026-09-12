@@ -62,8 +62,8 @@ function Module({
 
   return (
     <div className="overflow-hidden rounded-xl border border-gray-200 border-l-4 border-l-[#EC8601] bg-white">
-      <div className="px-4 py-4 sm:px-5">
-        <div className="flex items-start gap-3">
+      <div className="px-3 py-4 sm:px-5">
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-start">
 
           <button
             onClick={() => setIsOpen(!isOpen)}
@@ -134,7 +134,7 @@ function Module({
 
           <button
             onClick={() => deleteModule(module.id)}
-            className="shrink-0 rounded-md px-2 py-1 text-xs font-medium text-gray-400 transition hover:bg-red-50 hover:text-red-500"
+            className="shrink-0 self-start rounded-md px-2 py-1 text-xs font-medium text-gray-400 transition hover:bg-red-50 hover:text-red-500"
           >
             Delete
           </button>
@@ -142,7 +142,7 @@ function Module({
       </div>
 
       {isOpen && (
-        <div className="px-4 pb-4 pl-10 sm:px-5 sm:pb-5 sm:pl-12">
+        <div className="px-3 pb-4 pl-8 sm:px-5 sm:pb-5 sm:pl-12">
 
           {module.topics.length > 0 && (
             <div className="space-y-3">

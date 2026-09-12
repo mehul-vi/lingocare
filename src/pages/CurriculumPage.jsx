@@ -176,7 +176,7 @@ function CurriculumPage() {
       // --------------------------------
 
       const response = await fetch(
-        "http://localhost:5000/api/generate-curriculum",
+        "https://lingocare-amber.vercel.app/api/generate-curriculum",
         {
           method: "POST",
 
